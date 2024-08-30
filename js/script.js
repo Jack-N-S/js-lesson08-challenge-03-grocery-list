@@ -19,7 +19,7 @@ var groceries = [
   "mustard"
 ];
 
-console.log(groceries.length);
+//console.log(groceries.length);
 
 var deleteDuplicates = function (list) {
   var cleanList = [];
@@ -33,4 +33,8 @@ var deleteDuplicates = function (list) {
 
 
 var newGroceries = deleteDuplicates(groceries);
-console.log(newGroceries.length);
+//console.log(newGroceries.length);
+
+newGroceries.forEach(function (item, index) {
+  console.log(`#${index + 1} ${item}`)
+});
